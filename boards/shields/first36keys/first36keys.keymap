@@ -30,7 +30,7 @@
 /*        │  '       │  V       │  G       │  P       │  B       │   │  X       │  W       │          │ ; :      │ . <      │*/
             &kp APOS   &kp V      &kp G      &kp P      &kp B          &kp X      &kp W      &kp ENTER  &kp SEMI   &kp DOT 
 /*        ╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯*/
-                                  &kp E      &sl 1      &sl 2          &sk RSHFT &kp BSPC  &kp SPACE
+                                  &kp E      &sl 1      &sl 2          &sk RSHFT &shift_backspace   &kp SPACE
 /*                              ╰──────────┴──────────┴──────────╯   ╰──────────┴──────────┴──────────╯*/
             >;
         };
@@ -189,5 +189,13 @@
             bindings = <&kp>, <&kp>;
         };
     };
-    
+
+    behaviors {
+        shift_backspace: shift_backspace {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp BACKSPACE>, <&kp DELETE>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+    };
 };
