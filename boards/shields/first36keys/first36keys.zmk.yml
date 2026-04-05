@@ -1,0 +1,13 @@
+file_format: "1"
+id: first36keys
+name: first36keys
+type: shield
+
+requires:
+  - pro_micro
+features:
+  - keys
+
+siblings:
+  - first36keys_left
+  - first36keys_right
