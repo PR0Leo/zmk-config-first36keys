@@ -56,10 +56,10 @@
             bindings = <
 /*        ╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮*/
 /*        │          │  ESC     │  UP      │  TAB     │          │   │  =       │  4       │  5       │  6       │  ^       │*/
-            &trans     &kp ESC    &kp UP     &kp TAB    &trans         &kp EQUAL  &kp N4     &kp N5     &kp N6     &kp CARET
+            &kp F9     &kp ESC    &kp UP     &kp TAB    &kp F11        &kp EQUAL  &kp N4     &kp N5     &kp N6     &kp CARET
 /*        ├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤*/
 /*        │          │  LEFT    │  DOWN    │  RIGHT   │          │   │  *       │  0       │  1       │  2       │  3       │*/
-            &trans     &kp LEFT   &kp DOWN   &kp RIGHT  &trans         &kp STAR   &kp N0     &kp N1     &kp N2     &kp N3
+            &kp F10     &kp LEFT   &kp DOWN   &kp RIGHT &kp F12         &kp STAR   &kp N0     &kp N1     &kp N2     &kp N3
 /*        ├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤*/
 /*        │  F1      │  F2      │  F3      │  F4      │  F5      │   │  +       │  7       │  8       │  9       │  .       │*/
             &kp F1     &kp F2     &kp F3     &kp F4     &kp F5         &kp PLUS   &kp N7     &kp N8     &kp N9     &trans
